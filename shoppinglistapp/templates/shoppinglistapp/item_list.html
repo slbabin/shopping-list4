@@ -12,13 +12,16 @@
 </head>
 <body>
     <h1>Your shopping list</h1>
+    <a href="{% url 'item_detail' item_detail.id %}">View</a>
     <table>
         <tr>
             <th>Item</th>
+            <th></th>
         </tr>  
         {% for item in items %}
         <tr>
             <td>{{item.name}}</td>
+            <td></td> 
         </tr>
         {% empty %}
         <h2>You have no items on the list!</h2>

@@ -11,5 +11,6 @@ class ShoppingList(ListView):
 
 class ItemDetail(DetailView):
     model = Item
-    
+    context_object_name = 'item_detail'
+    # template_name = 'shoppingapplistapp/detail.html'
 

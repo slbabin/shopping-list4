@@ -14,18 +14,7 @@
 
 <body>
     <h1>Your shopping list item details</h1>
-    <table>
-        <tr>
-            <th>Item</th>
-        </tr>
-        {% for item in items %}
-        <tr>
-            <td>{{item.name}}</td>
-        </tr>
-        {% empty %}
-        <h2>You have no items on the list!</h2>
-        {% endfor %}
-    </table>
+    item:{{item_detail}}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

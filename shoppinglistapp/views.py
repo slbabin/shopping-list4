@@ -19,7 +19,8 @@ class ItemDetail(DetailView):
 
 class ItemCreate(CreateView):
     model = Item
-    fields = ('name', 'notes', 'complete')
-    # fields = '__all__'
-    success_url = reverse_lazy('items')
+    # fields = ('user', 'name', 'notes', 'complete')
+    fields = '__all__'  
+    success_url = '/'
+    # success_url = reverse_lazy('items')
 

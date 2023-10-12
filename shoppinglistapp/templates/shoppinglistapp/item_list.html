@@ -12,7 +12,8 @@
 </head>
 <body>
     <h1>Your shopping list</h1>
-    <a href="{% url 'item_detail' item_detail.id %}">View</a>
+    <a href="{% url 'item-create' %}">Add Item to the list</a>
+    
     <table>
         <tr>
             <th>Item</th>
@@ -21,7 +22,7 @@
         {% for item in items %}
         <tr>
             <td>{{item.name}}</td>
-            <td></td> 
+            <td><a href="{% url 'item' item.id %}">View</a></td> 
         </tr>
         {% empty %}
         <h2>You have no items on the list!</h2>

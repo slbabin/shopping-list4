@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+
 from .models import Item
 
 
@@ -11,6 +14,12 @@ class ShoppingList(ListView):
 
 class ItemDetail(DetailView):
     model = Item
-    context_object_name = 'item_detail'
-    # template_name = 'shoppingapplistapp/detail.html'
+    context_object_name = 'item'
+
+
+class ItemCreate(CreateView):
+    model = Item
+    fields = ('name', 'notes', 'complete')
+    # fields = '__all__'
+    success_url = reverse_lazy('items')
 

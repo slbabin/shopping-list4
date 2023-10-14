@@ -3,7 +3,7 @@ from .views import ShoppingList, ItemDetail, ItemCreate, ItemUpdate, ItemDelete,
 
 
 urlpatterns = [
-    path('login/', AppLogin, name='login'),
+    path('login/', AppLogin.as_view(), name='login'),
     path('', ShoppingList.as_view(), name='shopping_list'),
     path('item/<int:pk>', ItemDetail.as_view(), name='item'),
     path('item-create/', ItemCreate.as_view(), name='item-create'),

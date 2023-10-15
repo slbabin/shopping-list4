@@ -38,9 +38,13 @@ class ItemDetail(LoginRequiredMixin, DetailView):
 
 class ItemCreate(LoginRequiredMixin, CreateView):
     model = Item
-    # fields = ('user', 'name', 'notes', 'complete')
-    fields = '__all__'
+    fields = ('name', 'notes', 'complete')
+    # fields = '__all__'
     success_url = reverse_lazy('shopping_list')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(ItemCreate, self).form_valid(form)
 
 
 class ItemDelete(LoginRequiredMixin, DeleteView):
@@ -51,5 +55,5 @@ class ItemDelete(LoginRequiredMixin, DeleteView):
 
 class ItemUpdate(LoginRequiredMixin, UpdateView):
     model = Item
-    fields = '__all__'
+    fields = ('name', 'notes', 'complete')
     success_url = reverse_lazy('shopping_list')

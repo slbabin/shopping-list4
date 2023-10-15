@@ -23,6 +23,12 @@ class ShoppingList(LoginRequiredMixin, ListView):
     model = Item
     context_object_name = 'items'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context[]
+        return context
+
+
 
 class ItemDetail(LoginRequiredMixin, DetailView):
     model = Item

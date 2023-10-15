@@ -27,6 +27,12 @@ class PageRegister(FormView):
     redirect_authenticated_user = True
     success_url = reverse_lazy('shopping_list')
 
+    def form_valid(self, form):
+        user = form.save()
+        if user is not None:
+            login(self.request, user)
+        return super(PageRegister,self).form_valid(form)    
+
 
 class ShoppingList(LoginRequiredMixin, ListView):
     model = Item

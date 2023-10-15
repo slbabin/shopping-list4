@@ -5,6 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Item
 
@@ -18,30 +19,30 @@ class AppLogin(LoginView):
         return reverse_lazy('shopping_list')
 
 
-class ShoppingList(ListView):
+class ShoppingList(LoginRequiredMixin, ListView):
     model = Item
     context_object_name = 'items'
 
 
-class ItemDetail(DetailView):
+class ItemDetail(LoginRequiredMixin, DetailView):
     model = Item
     context_object_name = 'item'
 
 
-class ItemCreate(CreateView):
+class ItemCreate(LoginRequiredMixin, CreateView):
     model = Item
     # fields = ('user', 'name', 'notes', 'complete')
     fields = '__all__'
     success_url = reverse_lazy('shopping_list')
 
 
-class ItemDelete(DeleteView):
+class ItemDelete(LoginRequiredMixin, DeleteView):
     model = Item
     context_object_name = 'item'
     success_url = reverse_lazy('shopping_list')
 
 
-class ItemUpdate(UpdateView):
+class ItemUpdate(LoginRequiredMixin, UpdateView):
     model = Item
     fields = '__all__'
     success_url = reverse_lazy('shopping_list')

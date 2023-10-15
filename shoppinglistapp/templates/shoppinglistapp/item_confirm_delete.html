@@ -1,3 +1,6 @@
+{% extends 'shoppinglistapp/base.html' %}
+
+{% block content %}
 <a href="{% url 'shopping_list' %}"></a>
 
 <form method="POST" action="">
@@ -5,3 +8,5 @@
     <p>Do you really want to delete this item? {{ item }}</p>
     <input type="submit" value="Delete">
 </form>
+
+{% endblock content %}

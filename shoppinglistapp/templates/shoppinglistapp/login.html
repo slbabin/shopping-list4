@@ -1,3 +1,8 @@
+
+{% extends 'shoppinglistapp/base.html' %}
+
+{% block content %}
+
 <h1>Login</h1>
 
 <form method="POST" action="">
@@ -7,3 +12,5 @@
 </form>
 
 <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+
+{% endblock content %}

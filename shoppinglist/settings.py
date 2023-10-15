@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--_)4f0#&b-#9@e@9kn293=g9+q7gt4l)u%vdo_zfcwfp$3$1wx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com','8000-slbabin-shoppinglist4-rzq1dbkaiky.ws-eu105.gitpod.io']
 
 
 # Application definition

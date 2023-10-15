@@ -10,7 +10,7 @@ from .models import Item
 
 
 class AppLogin(LoginView):
-    template_name = "shoppinglistapp/login.html"
+    template_name = 'shoppinglistapp/login.html'
     fields = '__all__'
     redirect_authenticated_user = True
 

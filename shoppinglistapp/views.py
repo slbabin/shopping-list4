@@ -46,7 +46,7 @@ class ShoppingList(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['items'] = context['items'].filter(user=self.request.user) # Make sure user can get their own data
-        context['count'] = context['items'].filter(complete=False).count()
+        context['count'] = context['items'].filter().count()
         return context
 
 

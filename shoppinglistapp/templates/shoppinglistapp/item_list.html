@@ -2,6 +2,14 @@
 
     {% block content %}
 
+    <div class="container-header">
+
+        <div>
+            <h1>Hi {{request.user | title}}</h1>
+            <h4>You have {{count}} item {{count|pluralize}} on the list!</h4>
+        </div>
+    </div>
+
     {% if request.user.is_authenticated %}
     <p>{{request.user}}</p>
     <a href="{% url 'logout' %}">Logout</a>

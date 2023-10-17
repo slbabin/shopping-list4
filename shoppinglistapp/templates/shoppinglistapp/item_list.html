@@ -28,17 +28,19 @@
             {% if item.complete %}
             <div class="item-name">
                 <div class="item-complete-icon"></div>
-                <i><s><a href="{% url 'item-update' item.id %}"></a></s></i>
+                <i><s><a href="{% url 'item-update' item.id %}">{{ item }}</a></s></i>
                 
             </div>
             {% else %}
             <div class="item-name">
                 <div class="item-incomplete-icon"></div>
-                <a href="{% url 'item-update' item.id %}"></a>
+                <a href="{% url 'item-update' item.id %}">{{ item }}</a>
                 
             </div>
 
             {% endif %}
+
+            <a class="item-delete-link" href="{% url 'item-delete' item.id %}">&#215;</a>
 
         </div>
         {% empty %}

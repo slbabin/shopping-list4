@@ -21,6 +21,31 @@
 
     <h1>Your shopping list </h1>
     <a href="{% url 'item-create' %}">Add Item to the list</a>
+
+        <div class="items-wrapper">
+        {% for item in items %}
+        <div class="item-wrapper">
+            {% if item.complete %}
+            <div class="item-name">
+                <div class="item-complete-icon"></div>
+                <i><s><a href="{% url 'item-update' item.id %}"></a></s></i>
+                
+            </div>
+            {% else %}
+            <div class="item-name">
+                <div class="item-incomplete-icon"></div>
+                <a href="{% url 'item-update' item.id %}"></a>
+                
+            </div>
+
+            {% endif %}
+
+        </div>
+        {% empty %}
+        <h2>You have no items on the list!</h2>
+        {% endfor %}
+
+    </div>
     
     <table>
         <tr>
@@ -30,7 +55,7 @@
         </tr>  
         {% for item in items %}
         <tr>
-            <td>{{item.name}}</td>
+            <td>{{item.name}} {{item.complete}}</td>
             <td><a href="{% url 'item-update' item.id %}">Edit</a></td>
             <td><a href="{% url 'item-delete' item.id %}">Delete</a></td>
         </tr>

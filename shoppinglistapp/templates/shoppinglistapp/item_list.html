@@ -20,8 +20,9 @@
 
 
     <h1>Your shopping list </h1>
-    <a href="{% url 'item-create' %}">Add Item to the list</a>
-
+    <div class="add-item-wrapper">
+    <a href="{% url 'item-create' %}">Add Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}">&#x2b;</a>
+    </div>
         <div class="items-wrapper">
         {% for item in items %}
         <div class="item-wrapper">

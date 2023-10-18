@@ -11,6 +11,9 @@ from django.contrib.auth import login
 
 from .models import Item
 
+def home_page(request):
+    return render(request, 'shoppinglistapp/index.html', {})
+
 
 class AppLogin(LoginView):
     template_name = 'shoppinglistapp/login.html'

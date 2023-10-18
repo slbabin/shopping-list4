@@ -2,15 +2,18 @@
 {% extends 'shoppinglistapp/base.html' %}
 
 {% block content %}
+<div class="container-header">
 
 <h1>Login</h1>
+</div>
 
+<div class="card-container">
 <form method="POST" action="">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="Login">
+    <input class="button" type="submit" value="Login">
 </form>
-
+<p></p>
 <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
-
+</div>
 {% endblock content %}

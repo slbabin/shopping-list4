@@ -9,12 +9,15 @@
     <h2>Add an item in the form below</h1>
 
 </div>
-
+<div class="card-container">
 
 <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
 <input class="button" type="submit" value="Submit">
 
+
 </form>
+
+</div>
 {% endblock content %}

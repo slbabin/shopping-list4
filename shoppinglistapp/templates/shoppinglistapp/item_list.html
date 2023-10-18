@@ -50,22 +50,7 @@
 
     </div>
     
-    <table>
-        <tr>
-            <th>Item</th>
-            <th></th>
-            <th></th>
-        </tr>  
-        {% for item in items %}
-        <tr>
-            <td>{{item.name}} {{item.complete}}</td>
-            <td><a href="{% url 'item-update' item.id %}">Edit</a></td>
-            <td><a href="{% url 'item-delete' item.id %}">Delete</a></td>
-        </tr>
-        {% empty %}
-        <h2>You have no items on the list!</h2>
-        {% endfor %}
-    </table>
+
 
     {% endblock content %}
 

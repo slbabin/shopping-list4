@@ -1,12 +1,19 @@
 {% extends 'shoppinglistapp/base.html' %}
 
 {% block content %}
-<a href="{% url 'shopping_list' %}"></a>
 
+<div class="container-header">
+    
+    <a href="{% url 'shopping_list' %}">&#8592; Go Back</a>
+    
+
+</div>
+<div class="card-container">
 <form method="POST" action="">
     {% csrf_token %}
     <p>Do you really want to delete this item? {{ item }}</p>
     <input type="submit" value="Delete">
+    <a href="{% url 'shopping_list' %}"><button type="button">Cancel</button></a>
 </form>
-
+</div>
 {% endblock content %}

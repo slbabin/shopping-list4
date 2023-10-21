@@ -21,7 +21,7 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates/shoppinglistapp')
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com','8000-slbabin-shoppinglist4-rzq1dbkaiky.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['slbabin-shopping-list-528699dcec84.herokuapp.com','8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com','8000-slbabin-shoppinglist4-rzq1dbkaiky.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
-    # 'cloudinary'
+    'cloudinary',
     'shoppinglistapp.apps.ShoppinglistappConfig'
 ]
 

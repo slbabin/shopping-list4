@@ -1,0 +1,117 @@
+body{
+    background-color: #fafafa;
+    background-image: url("../static/images/background.jpg");
+    font-family:'Sawarabi Gothic', sans-serif;
+    padding-top: 70px;
+}
+
+.container{
+    max-width: 35%;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-header{
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    justify-content: space-between;
+    color: #fff;       
+    background: linear-gradient(90deg, rgba(26,18,172,1) 0%, rgba(45,45,224,1) 50%, rgba(0,212,255,1) 100%);
+}
+.container-header a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.item-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-top: 1px solid #7e7d7d;
+    border-color: #9e9898;        
+}
+
+.item-name{
+    display: flex;
+}
+.item-name a {
+    color: #9e9898;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.item-complete-icon {
+    width: 20px;
+    height: 20px;
+    background-color: beige;
+    border-radius: 50%;
+}
+.item-incomplete-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(9, 126, 54);
+    border-radius: 50%;
+}
+
+.item-delete-link {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 0;
+    color: #920b0b;
+}
+#add-item-icon {
+    text-decoration: none;
+    color: #920b0b;
+    font-size: 40px;
+    text-shadow: 1px 1px #920b0b;
+   
+}
+.add-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #1a25c5;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+textarea {
+    height: 100px;
+}
+label {
+    padding-top: 10px;
+    display: block;
+}
+.button {
+    background-color: #fafafa;        
+    color: #7e7d7d;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1a25c5;        
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card-container {
+    padding: 20px;
+}

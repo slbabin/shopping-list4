@@ -2,17 +2,28 @@
 
 {% block content %}
 
-<div class="container-header">
 
+    <div class="row">
+        <div class="col">
+          <h1>Shopping List</h1>
 
-</div>
+          <p>Plan and manage your grocery shopping list with ease using this shopping list app.</p>
 
+          <p>Login to create or retrive your list.</p>
 
-<div class="items-wrapper">
-    <img src="shoppinglistapp/static/images/background.jpg">
- 
+          <a href="{% url 'login' %}" class="myButton">Login</a>
 
-</div>
+          <p>Register if you don't have an account.</p>
+
+          <a href="{% url 'register' %}" class="myButton">Register</a>
+
+        </div>
+
+        <div class="col right-col">
+          column two
+        </div>
+      </div>
+
 
 
 

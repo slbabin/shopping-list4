@@ -5,8 +5,8 @@
     <div class="container-header">
 
         <div>
-            <h1>Hi {{request.user | title}}</h1>
-            <h4>You have {{count}} item{{count|pluralize}} on the list!</h4> 
+            <h1>Hi {{request.user | title}}!</h1>
+            <h4>You have {{count}} item{{count|pluralize}} on the list.</h4> 
         </div>
         {% if request.user.is_authenticated %}
    
@@ -21,7 +21,7 @@
 
     <h1>Your shopping list </h1>
     <div class="add-item-wrapper">
-    <a href="{% url 'item-create' %}">Add Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+    <a href="{% url 'item-create' %}">Add an Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
     </div>
         <div class="items-wrapper">
         {% for item in items %}

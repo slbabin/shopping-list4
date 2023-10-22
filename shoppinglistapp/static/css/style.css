@@ -1,5 +1,5 @@
 body{
-    background-color: #fafafa;
+    background-color: #0c1968;
     background-image: url("../images/background.jpg");
     font-family:'Sawarabi Gothic', sans-serif;
     padding-top: 70px;
@@ -38,7 +38,8 @@ h6 {
     padding: 10px;
     justify-content: space-between;
     color: #fff;       
-    background: linear-gradient(90deg, rgba(26,18,172,1) 0%, rgba(45,45,224,1) 50%, rgba(0,212,255,1) 100%);
+    background: #086CD2;
+    background: linear-gradient(90deg, rgb(126, 178, 230) #086CD2%, rgba(9,200,248,1) 100%);
 }
 .container-header a {
     text-decoration: none;

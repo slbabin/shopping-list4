@@ -4,16 +4,16 @@
 
 <div class="container-header">
     
-    <a href="{% url 'shopping_list' %}">&#8592; Go Back</a>
+    <a href="{% url 'shopping_list' %}"><i class="fa fa-reply" aria-hidden="true"></i> Go Back</a>
     
 
 </div>
 <div class="card-container">
 <form method="POST" action="">
     {% csrf_token %}
-    <p>Do you really want to delete this item? {{ item }}</p>
-    <input type="submit" value="Delete">
-    <a href="{% url 'shopping_list' %}"><button type="button">Cancel</button></a>
+    <p>Do you really want to delete this item? <strong class="dlt-item"> {{ item }}</strong></p>
+    <input class="myButton"  type="submit" value="Delete">
+    <!-- <a href="{% url 'shopping_list' %}"><button class="myButton" type="button">Cancel</button></a> -->
 </form>
 </div>
 {% endblock content %}

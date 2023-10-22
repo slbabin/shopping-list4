@@ -21,7 +21,7 @@
 
     <h1>Your shopping list </h1>
     <div class="add-item-wrapper">
-    <a href="{% url 'item-create' %}">Add Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}">&#x2b;</a>
+    <a href="{% url 'item-create' %}">Add Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
     </div>
         <div class="items-wrapper">
         {% for item in items %}
@@ -41,7 +41,7 @@
 
             {% endif %}
 
-            <a class="item-delete-link" href="{% url 'item-delete' item.id %}">&#215;</a>
+            <a class="item-delete-link" href="{% url 'item-delete' item.id %}"><i class="fa fa-trash" aria-hidden="true"></i></a>
 
         </div>
         {% empty %}

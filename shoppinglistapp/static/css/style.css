@@ -65,13 +65,13 @@ h6 {
 .item-complete-icon {
     width: 20px;
     height: 20px;
-    background-color: beige;
+    background-color: rgb(5, 99, 28);
     border-radius: 50%;
 }
 .item-incomplete-icon {
     width: 20px;
     height: 20px;
-    background-color: rgb(9, 126, 54);
+    background-color: rgb(172, 7, 7);
     border-radius: 50%;
 }
 
@@ -94,6 +94,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-size: 1.5em;
 
 }
 input[type=text],

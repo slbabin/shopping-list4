@@ -5,22 +5,16 @@ body{
     padding-top: 70px;
 }
 
-.home-container {
-    max-width: 40%;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
 
 .right-col {
     min-height: 400px;
     width: 40%;
-    background-image: url("../images/app-image.jpg");
+    /* background-image: url("../images/app-image.jpg"); */
     background-size: cover;
 }
 
 .container{
-    max-width: 35%;
+    max-width: 40%;
     margin: auto;
     padding: 0;
     background-color: #fff;
@@ -35,6 +29,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
 }
 
 .container-header{
@@ -148,10 +143,14 @@ label {
 .myButton:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	background-color:#0061a7;
+    text-decoration: none;
+    color: #b9b6b6;
 }
 .myButton:active {
 	position:relative;
 	top:1px;
 }
 
-     
+.main-img {
+    min-width: 300px;
+}

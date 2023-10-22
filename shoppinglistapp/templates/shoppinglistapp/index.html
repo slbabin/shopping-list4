@@ -1,10 +1,12 @@
 {% extends 'shoppinglistapp/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
 
     <div class="row">
-        <div class="col">
+        <div class="col-sm">
           <h1>Shopping List</h1>
 
           <p>Plan and manage your grocery shopping list with ease using this shopping list app.</p>
@@ -19,8 +21,8 @@
 
         </div>
 
-        <div class="col right-col">
-          column two
+        <div class="col-sm">
+          <img class="img-fluid main-img" src="{% static 'images/app-image.jpg' %}" alt="A man with a pad">
         </div>
       </div>
 

@@ -11,13 +11,15 @@ body{
     width: 40%;
     /* background-image: url("../images/app-image.jpg"); */
     background-size: cover;
+    background-color: white;
+
 }
 
 .container{
     max-width: 40%;
     margin: auto;
     padding: 0;
-    background-color: #fff;
+    background-color: #0c1968;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -38,8 +40,8 @@ h6 {
     padding: 10px;
     justify-content: space-between;
     color: #fff;       
-    background: #086CD2;
-    background: linear-gradient(90deg, rgb(126, 178, 230) #086CD2%, rgba(9,200,248,1) 100%);
+    background: rgb(9,200,248);
+    background: linear-gradient(80deg, rgb(6, 143, 207) 0%, rgba(69,45,253,1) 100%);
 }
 .container-header a {
     text-decoration: none;
@@ -125,6 +127,7 @@ label {
 
 .card-container {
     padding: 20px;
+    background-color: white;
 }
 
 .myButton {
@@ -163,8 +166,10 @@ label {
 }
 .main-left-col {
     /* min-width: 40%; */
+    background-color: white;
 }
 .main-right-col {
+    background-color: white;
     
 }
 .main-left-col h1 {

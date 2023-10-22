@@ -135,10 +135,11 @@ label {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:13px;
+	font: size 1.5em;;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
+    
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
@@ -153,4 +154,28 @@ label {
 
 .main-img {
     min-width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-left-col {
+    min-width: 40%;
+}
+.main-right-col {
+    
+}
+.main-left-col h1 {
+    font-weight: 900;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.main-left-col p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home-page-btn {
+    margin: 0px 20px 30px;
+    width: 90%;
+    text-align: center;
 }

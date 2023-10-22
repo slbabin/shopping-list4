@@ -3,6 +3,7 @@ from .views import ShoppingList, ItemDetail, ItemCreate, ItemUpdate, ItemDelete,
 from django.contrib.auth.views import LogoutView
 
 
+
 urlpatterns = [
     path('', home_page, name='home'),
     path('login/', AppLogin.as_view(), name='login'),
@@ -12,5 +13,6 @@ urlpatterns = [
     path('item/<int:pk>', ItemDetail.as_view(), name='item'),
     path('item-create/', ItemCreate.as_view(), name='item-create'),
     path('item-update/<int:pk>', ItemUpdate.as_view(), name='item-update'),
-    path('item-delete/<int:pk>', ItemDelete.as_view(), name='item-delete')
+    path('item-delete/<int:pk>', ItemDelete.as_view(), name='item-delete'),
+
 ]

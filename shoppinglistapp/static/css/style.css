@@ -6,7 +6,10 @@ body{
     background-size: cover;
 }
 
-
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 .right-col {
     min-height: 400px;
     width: 40%;
@@ -20,6 +23,7 @@ body{
     
     background-color: #0c1968;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
 }
 
 
@@ -186,4 +190,21 @@ label {
     margin: 0px 20px 30px;
     width: 90%;
     text-align: center;
+}
+
+.footer {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background: rgb(9,200,248);
+    background: linear-gradient(80deg, rgb(6, 143, 207) 0%, rgba(69,45,253,1) 100%);
+    
+}
+.footer a {
+    color: white;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
 }

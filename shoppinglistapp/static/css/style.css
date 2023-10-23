@@ -3,6 +3,7 @@ body{
     background-image: url("../images/background.jpg");
     font-family:'Sawarabi Gothic', sans-serif;
     padding-top: 70px;
+    background-size: cover;
 }
 
 

@@ -20,6 +20,13 @@
     <div class="card-container">
 
     <h1>Your shopping list </h1>
+
+<form method="GET">
+<input type="text" name="search-items">
+<input type="submit" value="Search">
+
+</form>
+
     <div class="add-item-wrapper">
     <a href="{% url 'item-create' %}">Add an Item to the list</a>  <a id="add-item-icon" href="{% url 'item-create' %}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
     </div>

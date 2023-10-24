@@ -50,6 +50,13 @@ class ShoppingList(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['items'] = context['items'].filter(user=self.request.user) # Make sure user can get their own data
         context['count'] = context['items'].filter().count()
+
+        search_input = self.request.GET.get('search-items') or ''
+        if search_input:
+            context['items'] = context['items'].filter(name__icontains=search_input)
+
+        context['search_input'] = search_input
+
         return context
 
 

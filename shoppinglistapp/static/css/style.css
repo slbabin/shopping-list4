@@ -113,10 +113,13 @@ textarea {
 }
 textarea {
     height: 100px;
+    vertical-align: top;
 }
 label {
     padding-top: 10px;
-    display: block;
+    /* display: inline; */
+    font-size: 1.2em;
+    margin-right: 20px;
 }
 .button {
     background-color: #fafafa;        
@@ -207,4 +210,16 @@ label {
 .grow:hover {
     transform: scale(1.1);
     transition: 1s ease;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+.search-bar {
+    margin-bottom: 5px;
+}
+
+.register-form label {
+    display: block;
 }

@@ -7,7 +7,7 @@
 <h1>Register</h1>
 </div>
 <div class="card-container">
-<form method="POST" action="">
+<form method="POST" class="register-form">
     {% csrf_token %}
     <label>{{form.username.label}}:</label>
     {{form.username}}

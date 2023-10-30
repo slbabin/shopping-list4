@@ -49,7 +49,9 @@ h6 {
 .container-header a {
     text-decoration: none;
     color: #fafafa;
+    
 }
+
 
 .item-wrapper {
     display: flex;

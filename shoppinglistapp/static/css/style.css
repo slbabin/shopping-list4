@@ -225,3 +225,10 @@ input[type=checkbox] {
 .register-form label {
     display: block;
 }
+
+.login-btn {
+    font-size: 1.2em;
+}
+.login-btn:hover {
+    color: #b9b6b6;
+}

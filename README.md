@@ -78,9 +78,24 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 
 # Features 
 
-- User Registration and Authentication: Users can create accounts, log in, and manage their shopping lists securely.
-- Add Items: Users can add items to their shopping lists, specifying the item name and optional notes.
-- Edit and Delete Items: Users can edit item details or remove items from their lists.
+- **User-friendly design**: The app has a container desing which is accessible and user-friendly on various devices, including mobile phones and tablets.
+![Accessible and user-friendly design](docs/images/start-screen.jpg) 
+
+- **User Registration and Authentication:** Users can create accounts, log in, and manage their shopping lists securely.
+![Registration and login](docs/images/register-login.jpg) 
+
+- **Add Items:** Users can add items to their shopping lists, specifying the item name and optional notes.
+![Registration and login](docs/images/add-item.jpg) 
+
+- **Edit items:** Users can edit item details.
+![Registration and login](docs/images/edit-item.jpg) 
+
+- **Delete items:** User can remove items from their list. 
+![Registration and login](docs/images/delete-item.jpg) 
+
+- **Delete confirmation** Users presented with the delete confirmation message. 
+![Registration and login](docs/images/delete-confirmation.jpg) 
+
 - Mark Items as Purchased: Users can mark items as purchased, making it easy to keep track of what they've already bought.
 - Search option:  Users can search the list of item in order to manage the shopping list more efficiently.
 

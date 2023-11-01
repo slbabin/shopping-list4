@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'shoppinglistapp.apps.ShoppinglistappConfig'
-]
+    'shoppinglistapp.apps.ShoppinglistappConfig',
+ ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

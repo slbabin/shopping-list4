@@ -128,7 +128,7 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 ## User story testing
 ##### About The app 
 *As a User I want to understand what the app is about.*
-- On the app start page there is information that cleary tells the user the purpose of the app.
+- On the app start page there is information that- cleary tells the user the purpose of the app.
 
 ##### Register
 *As a User I can Create an account so that I can add my items to the shopping list.*
@@ -158,3 +158,16 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 ##### Search the shopping list
 *As a User I can search the shopping list for an item*
 - On the shopping list page there is a search bar which allows to search for an item on the list.
+
+## Manual Testing
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| Login button | Clicking on the button redirect to the login form.                          | Pass    |
+| Register button | Clicking on the button redirects to the registration form.               | Pass    |
+| Create item | Clicking on the 'Add an Item to the list' allows to add a new item.          | Pass    |
+| Edit item | Clicking on the item in the list opens the prepopulated items details which can be updated.| Pass    |
+| Delete item  | Clicking on the Delete icon first opens a confirmation page and then deletes the item.   | Pass    |
+| Header title  | Make sure that the correct title displayed when open either the Add or Edit form.  | Pass    |
+| Login/Logout link | When logged in the app, the link in the top right corner changes to 'Logout'.  | Pass    |
+| Responsiveness | Checked to make sure that the app layout changes depending on the viewed devices         | Pass      |
+| Footer social icons | Clicking on social icon in the footer opens the correct web address in the new tab.       | Pass      |

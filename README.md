@@ -123,3 +123,38 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 - [Codeanywhere](https://codeanywhere.com/) - a cross-platform cloud integrated development environment (IDE), alternative IDE to Gitpod.
 - [ElephantSQL](https://www.elephantsql.com/) - a PostgreSQL database hosting service.
 - [Heroku](https://heroku.com) - a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+# Testing
+## User story testing
+##### About The app 
+*As a User I want to understand what the app is about.*
+- On the app start page there is information that cleary tells the user the purpose of the app.
+
+##### Register
+*As a User I can Create an account so that I can add my items to the shopping list.*
+- On the app start page there is a big Registration button.  If a User clicks on this button, they will be redirected to the registeration page where they can sign up. Once they sign up they will be able to access the list they created.
+
+##### Login / Logout
+*As a User I can Login/Logout so that I can access my own data when logged in, and log out so that no one can access my account and view items created by me.*
+- When a User is not logged in the Login button is visible in the center of the app. Once clicking on the button, the user redirected to the login page where they need to enter their user name and password. In the top right corner of the app the user will see the option to logout from the account. 
+- After clicking on Logout button, the user automatically redirected to the app start page.
+
+##### View Shopping list items
+*As a User I can see the list of shopping list items and clicking on an item would open the item details.*
+- The User must be logged into the app or the shopping list will not be visible. If the User is logged in they can click on one of the items on the list and this will take them to that form with item details.
+
+##### Add item
+*As a User I can add an item to the shopping list*
+- When a user is logged into the app they are able to click on the 'Add an Item' link or the +Add icon, which will bring them to the Add Item form where they are able to add item details.
+
+##### Edit item
+*As a User I can edit an item detail*
+- When a user is logged into the app they are able to click on one of the items on the list and this will open the form with prepopulated with item detail fields.
+
+##### Delete item
+*As a User I can delete an item from the shopping list*
+- When a user is logged into the app they are able delete the item from the shopping list by clicking the Delete icon.
+
+##### Search the shopping list
+*As a User I can search the shopping list for an item*
+- On the shopping list page there is a search bar which allows to search for an item on the list.

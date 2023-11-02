@@ -13,7 +13,6 @@
     {% csrf_token %}
     <p>Do you really want to delete this item? <strong class="dlt-item"> {{ item }}</strong></p>
     <input class="myButton"  type="submit" value="Delete">
-    <!-- <a href="{% url 'shopping_list' %}"><button class="myButton" type="button">Cancel</button></a> -->
-</form>
+    </form>
 </div>
 {% endblock content %}

@@ -101,3 +101,25 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 
 - **Search items:**  Users can search the list of item in order to manage the shopping list more efficiently.
 ![Search items](docs/images/search-items.jpg) 
+
+
+# Future Features
+
+ There are a few fetures that I would like to implement in the future releases.
+ - To be able to set a budget for the shopping list and track expenses as users add items to it.
+ - Be able to share the shopping list with family or friends, so they can collaborate on the shopping needs.
+ - Be able to see the total cost of items on the shopping list to help the user stay within their budget.
+
+ # Technologies Used
+ - [Django](https://www.djangoproject.com/) - a free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+ - [Python](https://www.python.org/) - a high-level, general-purpose programming language. 
+- [Bootstrap](https://getbootstrap.com/) - a free front-end framework for faster and easier web development.
+- [HTML](https://en.wikipedia.org/wiki/HTML) - the standard markup language for Web pages.
+- [CSS](https://en.wikipedia.org/wiki/CSS) -  a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+- [JavaScript](https://en.wikipedia.org/wiki/CSS)- a lightweight interpreted  programming language with first-class functions.
+- [Balsamiq](https://balsamiq.com/) - a user interface design tool for creating wireframes (sometimes called mockups or low-fidelity prototypes). 
+- [Github](https://en.wikipedia.org/wiki/GitHub) - a platform and cloud-based service for software development and version control using Git.
+- [Gitpod](https://www.gitpod.io/) - a cloud development environment to efficiently and securely develop software. 
+- [Codeanywhere](https://codeanywhere.com/) - a cross-platform cloud integrated development environment (IDE), alternative IDE to Gitpod.
+- [ElephantSQL](https://www.elephantsql.com/) - a PostgreSQL database hosting service.
+- [Heroku](https://heroku.com) - a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.

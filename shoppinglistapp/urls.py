@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import ShoppingList, ItemDetail, ItemCreate, ItemUpdate, ItemDelete, AppLogin, AppRegister, home_page
+from .views import ShoppingList, ItemDetail, ItemCreate, ItemUpdate,\
+    ItemDelete, AppLogin, AppRegister, home_page
 from django.contrib.auth.views import LogoutView
-
 
 
 urlpatterns = [

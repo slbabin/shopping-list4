@@ -178,4 +178,81 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 ![HTML validation](docs/images/html-validation-startpage.jpg) 
 
 ##### CSS validation
-![HTML validation](docs/images/css-validation-startpage.jpg) 
+![CSS validation](docs/images/css-validation-startpage.jpg) 
+
+##### PEP Validation
+- Python code was tested using Code Institutes PEP8 online validator located [here](https://pep8ci.herokuapp.com/)
+
+
+<details>
+    <summary>Models.py</summary>  
+
+![PEP8 models.py validation](docs/images/models-pep8-validation.jpg)  
+</details>
+
+<details>
+    <summary>Views.py</summary>  
+
+![PEP8 views.py validation](docs/images/views-pep8-validation.jpg)  
+</details>
+
+<details>
+    <summary>Urls.py</summary>  
+
+![PEP8 urls.py validation](docs/images/urls-pep8-validation.jpg)  
+</details>
+
+<details>
+    <summary>Admin.py</summary>  
+
+![PEP8 admin.py validation](docs/images/admin-pep8-validation.jpg)  
+</details>
+
+<details>
+    <summary>Apps.py</summary>  
+
+![PEP8 apps.py validation](docs/images/apps-pep8-validation.jpg)  
+</details>
+
+
+## Lighthouse
+- Lighthouse is an open-source automated tool and web app developed by Google that is used to improve the quality of web pages and assess their performance, accessibility, best practices, and search engine optimization (SEO). 
+
+<details>
+    <summary>Start page - desktop</summary>  
+
+![Start page Ligthouse validation - desktop ](docs/images/startpage-lighthouse-desktop.jpg)  
+</details>
+
+<details>
+    <summary>Start page - mobile</summary>  
+
+![Start page Ligthouse validation - mobile ](docs/images/startpage-lighthouse-mobile.jpg)  
+</details>
+
+<details>
+    <summary>List page - deskop</summary>  
+
+![Start page Ligthouse validation - mobile ](docs/images/listpage-lighthouse-desktop.jpg)  
+</details>
+
+<details>
+    <summary>List page - mobile</summary>  
+
+![Start page Ligthouse validation - mobile ](docs/images/listpage-lighthouse-mobile.jpg)  
+</details>
+
+## Browser and Device Testing
+
+- The site was tested in the following browsers. In all browsers it performed as expected.
+  - Google Chrome (Version 119.0.6045.106)
+  - Firefox (119.0)
+  - Microsoft Edge (Version 119.0.2151.44)
+  - Opera (104.0.4944.36)
+
+- The site was tested in the following mobile devices without any issues.
+ - Samsung A13 5G
+ - Xiaomi Redmi Note 9
+ - iPad Air 2
+ - iPhone 11
+

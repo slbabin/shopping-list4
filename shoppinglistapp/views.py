@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView,\
+    FormView
 from django.urls import reverse_lazy
 
 from django.contrib.auth.views import LoginView
@@ -10,6 +11,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
 from .models import Item
+
 
 def home_page(request):
     return render(request, 'shoppinglistapp/index.html', {})
@@ -34,12 +36,12 @@ class AppRegister(FormView):
         user = form.save()
         if user is not None:
             login(self.request, user)
-        return super(AppRegister,self).form_valid(form)
+        return super(AppRegister, self).form_valid(form)
 
     def get(self, *args, **kwargs):
         if self.request.user.is_authenticated:
             return redirect('shopping_list')
-        return super(AppRegister, self).get(*args, **kwargs) 
+        return super(AppRegister, self).get(*args, **kwargs)
 
 
 class ShoppingList(LoginRequiredMixin, ListView):
@@ -48,17 +50,18 @@ class ShoppingList(LoginRequiredMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['items'] = context['items'].filter(user=self.request.user) # Make sure user can get their own data
+        context['items'] = context['items'].filter(
+            user=self.request.user)  # Make sure user can get their own data
         context['count'] = context['items'].filter().count()
 
         search_input = self.request.GET.get('search-items') or ''
         if search_input:
-            context['items'] = context['items'].filter(name__icontains=search_input)
+            context['items'] = context['items'].filter(
+                name__icontains=search_input)
 
         context['search_input'] = search_input
 
         return context
-
 
 
 class ItemDetail(LoginRequiredMixin, DetailView):

@@ -256,3 +256,31 @@ The database diagram was created using [draqSQL](https://drawsql.app).
  - iPad Air 2
  - iPhone 11
 
+## Deployment
+
+The app was deployed to Heroku from a GitHub repository. Below is the deployment step-by-step guide:
+
+1. Prerequisites:
+
+- Make sure you have a Heroku account. If not, sign up at Heroku.
+
+2. Prepare the app for deployment:
+
+- Create a requirements.txt file that lists all the project's dependencies. The file is generated using **pip3 freeze > requirements.txt**.
+
+3. Configure the Database:
+
+- Configured the DATABASE_URL in the app settings to use the Heroku PostgreSQL addon. You can add it to your project settings like this:
+
+
+4. Create a Procfile:
+
+- Heroku uses a Procfile to determine how to run an application. Create a Procfile (without any file extension) in the project's root directory and specify the command to start the application:  **web: gunicorn shoppinglist.wsgi**
+
+5. Static Files Handling:
+
+
+
+6. Environment Variables:
+
+- Set environment variables for sensitive data such as SECRET_KEY, DATABASE_URL, and other configuration settings. You can set them through the Heroku Dashboard. 

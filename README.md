@@ -171,3 +171,11 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 | Login/Logout link | When logged in the app, the link in the top right corner changes to 'Logout'.  | Pass    |
 | Responsiveness | Checked to make sure that the app layout changes depending on the viewed devices         | Pass      |
 | Footer social icons | Clicking on social icon in the footer opens the correct web address in the new tab.       | Pass      |
+
+## Code Validation
+
+##### HTML validation
+![HTML validation](docs/images/html-validation-startpage.jpg) 
+
+##### CSS validation
+![HTML validation](docs/images/css-validation-startpage.jpg) 

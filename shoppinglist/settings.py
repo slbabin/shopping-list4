@@ -21,8 +21,8 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates/shoppinglistapp')
-
+# TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates/shoppinglistapp')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['slbabin-shopping-list-528699dcec84.herokuapp.com','8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com','8000-slbabin-shoppinglist4-rzq1dbkaiky.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['slbabin-shopping-list-528699dcec84.herokuapp.com','8000-slbabin-shopping-list4-3z6dvgaaof.us2.codeanyapp.com','8000-slbabin-shoppinglist4-rzq1dbkaiky.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -142,7 +142,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 

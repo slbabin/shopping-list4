@@ -41,12 +41,12 @@ ALLOWED_HOSTS = ['slbabin-shopping-list-528699dcec84.herokuapp.com','8000-slbabi
 # Application definition
 
 INSTALLED_APPS = [
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
-    'cloudinary_storage',
+    'django.contrib.messages',    
     'django.contrib.staticfiles',
     'cloudinary',
     'shoppinglistapp.apps.ShoppinglistappConfig',

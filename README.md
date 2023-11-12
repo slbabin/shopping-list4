@@ -12,6 +12,11 @@ The live version of this app is located [here](https://slbabin-shopping-list-528
     * [Wireframes](#wireframes)
     * [Agile Methodology](#agile-methodology)
     * [Database Diagram](#database-diagram)
+    * [Features](#features)
+    * [Future Features](#future-features)
+    * [Technologies Used](#technologies-used)
+    * [Testing](#testing)
+    * [Deployment](#deployment)
 
 
 
@@ -111,24 +116,24 @@ The database diagram was created using [draqSQL](https://drawsql.app).
  - Be able to see the total cost of items on the shopping list to help the user stay within their budget.
 
  # Technologies Used
- - [Django](https://www.djangoproject.com/) - a free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
- - [Python](https://www.python.org/) - a high-level, general-purpose programming language. 
-- [Bootstrap](https://getbootstrap.com/) - a free front-end framework for faster and easier web development.
+ - [Django](https://www.djangoproject.com/) - free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+ - [Python](https://www.python.org/) - high-level, general-purpose programming language. 
+- [Bootstrap](https://getbootstrap.com/) - free front-end framework for faster and easier web development.
 - [HTML](https://en.wikipedia.org/wiki/HTML) - the standard markup language for Web pages.
-- [CSS](https://en.wikipedia.org/wiki/CSS) -  a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
-- [JavaScript](https://en.wikipedia.org/wiki/CSS)- a lightweight interpreted  programming language with first-class functions.
-- [Balsamiq](https://balsamiq.com/) - a user interface design tool for creating wireframes (sometimes called mockups or low-fidelity prototypes). 
-- [Github](https://en.wikipedia.org/wiki/GitHub) - a platform and cloud-based service for software development and version control using Git.
-- [Gitpod](https://www.gitpod.io/) - a cloud development environment to efficiently and securely develop software. 
-- [Codeanywhere](https://codeanywhere.com/) - a cross-platform cloud integrated development environment (IDE), alternative IDE to Gitpod.
-- [ElephantSQL](https://www.elephantsql.com/) - a PostgreSQL database hosting service.
-- [Heroku](https://heroku.com) - a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+- [CSS](https://en.wikipedia.org/wiki/CSS) -  style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+- [JavaScript](https://en.wikipedia.org/wiki/CSS)- lightweight interpreted  programming language with first-class functions.
+- [Balsamiq](https://balsamiq.com/) - user interface design tool for creating wireframes (sometimes called mockups or low-fidelity prototypes). 
+- [Github](https://en.wikipedia.org/wiki/GitHub) - platform and cloud-based service for software development and version control using Git.
+- [Gitpod](https://www.gitpod.io/) - cloud development environment to efficiently and securely develop software. 
+- [Codeanywhere](https://codeanywhere.com/) - cross-platform cloud integrated development environment (IDE), alternative IDE to Gitpod.
+- [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service.
+- [Heroku](https://heroku.com) - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 # Testing
 ## User story testing
 ##### About The app 
 *As a User I want to understand what the app is about.*
-- On the app start page there is information that- cleary tells the user the purpose of the app.
+- On the app start page there is information that cleary tells the user the purpose of the app.
 
 ##### Register
 *As a User I can Create an account so that I can add my items to the shopping list.*
@@ -293,3 +298,10 @@ The app was deployed to Heroku from a GitHub repository. Below is the deployment
 8. Deploying to Heroku
 - Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. - For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
 - Scroll down to the manual deployment section and click 'Deploy Branch'. 
+
+## Credits
+
+- The Code Institute's 'Hello Django" and "I Think Therefore I Blog" walk through provided fundamentals of creating a project with Django.
+- This youtube [video](https://www.youtube.com/watch?v=Em-8EvV9w3o) is another great resource that helped me understand the framework. 
+- The project was inspired by this youtube [video](https://www.youtube.com/watch?v=llbtoQTt4qw).
+- Images were downloaded from [www.freepik.com](https://www.freepik.com/free-vector/expenses-calculation-wishlist-planning-shopping-list-purchases-summary-internet-supermarket-basket-shopper-wishlist-creative-design-element_11667086.htm) and [www.vecteezy.com](https://www.vecteezy.com/vector-art/1410750-cyber-monday-happy-shopping-background)

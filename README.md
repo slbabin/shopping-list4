@@ -177,6 +177,20 @@ The database diagram was created using [draqSQL](https://drawsql.app).
 | Responsiveness | Checked to make sure that the app layout changes depending on the viewed devices         | Pass      |
 | Footer social icons | Clicking on social icon in the footer opens the correct web address in the new tab.       | Pass      |
 
+
+## Authomated testing
+
+##### Used Django default test framework to test views and the model.
+
+- Views.py test. Used the assertEqual() method to confirm that the HTTP response returns status code 200, and uses the assertTemplateUsed() to confirm that the correct template used.
+
+![HTML validation](docs/images/autotest-views.jpg) 
+
+
+- Models.py test. Used the assertFalse() method to confirm that the complete status is False by default. 
+
+![HTML validation](docs/images/autotest-model.jpg) 
+
 ## Code Validation
 
 ##### HTML validation
